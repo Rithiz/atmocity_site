@@ -197,7 +197,7 @@ export default function Home() {
                 key={it.title}
                 className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6"
               >
-                <div className="mx-auto relative h-40 w-40">
+                <div className="mx-auto relative h-80 w-80">
                   <Image src={it.icon} alt="" fill className="object-contain" />
                 </div>
                 <h3 className="mt-4 font-semibold text-slate-900 whitespace-pre-line">

@@ -152,7 +152,7 @@ export default function ExpertisePage() {
             href="/expertise/checklist"
             className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-white font-medium hover:bg-blue-800 transition whitespace-nowrap"
           >
-            Découvrez nos checklist <span className="ml-2">›</span>
+            Découvrez nos checklists <span className="ml-2">›</span>
           </Link>
         </div>
       </section>
