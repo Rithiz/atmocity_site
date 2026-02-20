@@ -239,7 +239,7 @@ export default async function ArticlePage({
   return (
     <main className="max-w-4xl mx-auto px-6 py-16">
       <section className="text-center py-16">
-      <div className="relative mx-auto w-52 h-52">
+      <div className="relative mx-auto w-104 h-104">
           <Image
             src={article.image}
             alt={article.title}
