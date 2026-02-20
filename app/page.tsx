@@ -103,7 +103,7 @@ export default function Home() {
 
           <div className="mx-auto mt-7 max-w-3xl text-slate-700">
             <p className="text-base md:text-lg">
-              Nous transformons vos données de consommation en économies mesurables {" "}
+              Nous transformons vos données de consommation en économies mesurables {" "} <br></br>
               <span className="italic">
               — sans installation de capteurs, sans travaux, sans investissement initial —
               </span>
@@ -188,7 +188,7 @@ export default function Home() {
                 key={it.title}
                 className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6"
               >
-                <div className="mx-auto relative h-100 w-100">
+                <div className="mx-auto relative h-60 w-60">
                   <Image src={it.icon} alt="" fill className="object-contain" />
                 </div>
                 <h3 className="mt-4 font-semibold text-slate-900 whitespace-pre-line">
