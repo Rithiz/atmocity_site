@@ -10,6 +10,7 @@ const segments = [
       "Pilotez la performance de vos bâtiments publics\net dégagez des économies pour vos projets communaux.",
     cta: "Demander une démo collectivités",
     href: "/contact",
+    bg: "/images/collectivite.png",
     image: "/images/article-collectivites.png",
   },
   {
@@ -19,6 +20,7 @@ const segments = [
       "Apportez transparence et comparaisons claires\nà vos copropriétaires.",
     cta: "Demander une démo syndics",
     href: "/contact",
+    bg: "/images/copro.png",
     image: "/images/articles-syndics.png",
   },
   {
@@ -28,6 +30,7 @@ const segments = [
       "Réduisez vos coûts énergétiques\net optimisez votre bilan carbone.",
     cta: "Demander une démo entreprises",
     href: "/contact",
+    bg: "/images/entreprise.png",
     image: "/images/article-entreprises.png",
   },
 ];
@@ -112,52 +115,63 @@ export default function Home() {
 
           {/* CARDS PREMIUM (images en fond) */}
           <div className="mt-14 grid gap-6 md:grid-cols-3">
+            
             {segments.map((s) => (
               <article
-              key={s.title}
-              className="relative flex flex-col h-full rounded-3xl shadow-xl border border-slate-200 bg-white p-8 transition hover:-translate-y-2 hover:shadow-2xl"
-            >
-              {/* IMAGE CENTRÉE */}
-              <div className="flex justify-center mb-6">
-                <div className="relative h-36 w-36">
-                  <Image
-                    src={s.image}
-                    alt={s.title}
-                    fill
-                    className="object-contain"
-                    priority
-                  />
+                key={s.title}
+                className="relative flex flex-col h-full overflow-hidden rounded-2xl shadow-lg border border-white/40 bg-white/30 backdrop-blur
+             transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              >
+                {/* Image en fond */}
+                <div className="absolute inset-0">
+                  <Image src={s.bg} alt="" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-linear-to-b from-white/80 via-white/70 to-white/90" />
                 </div>
-              </div>
-            
-              <h3 className="text-2xl font-semibold text-blue-900 text-center">
-                {s.title}
-              </h3>
-            
-              <div className="mt-4 text-center text-blue-900/90 font-medium whitespace-pre-line">
-                {s.tagline}
-              </div>
-            
-              <div className="mt-6 h-px bg-blue-900/10" />
-            
-              <p className="mt-5 text-center text-slate-700 whitespace-pre-line">
-                {s.desc}
-              </p>
-            
-              <div className="mt-auto pt-6 flex justify-center">
-                <Link
-                  href={s.href}
-                  className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-white font-medium hover:bg-blue-800 transition shadow-sm"
-                >
-                  {s.cta} <span className="ml-2">›</span>
-                </Link>
-              </div>
-            </article>
+
+                <div className="relative flex flex-col h-full p-6 md:p-7">
+                  {/* ILLUSTRATION CENTRÉE */}
+                  <div className="flex justify-center mb-4">
+                    <div className="relative h-28 w-28 md:h-32 md:w-32">
+                      <Image
+                        src={s.image}
+                        alt={s.title}
+                        fill
+                        className="object-contain drop-shadow-sm"
+                        priority
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-semibold text-blue-900 text-center">
+                    {s.title}
+                  </h3>
+
+                  <div className="mt-4 text-center text-blue-900/90 font-medium whitespace-pre-line">
+                    {s.tagline}
+                  </div>
+
+                  <div className="mt-6 h-px bg-blue-900/10" />
+
+                  <p className="mt-5 text-center text-slate-700 whitespace-pre-line">
+                    {s.desc}
+                  </p>
+
+                  <div className="mt-auto pt-6 flex justify-center">
+                    <Link
+                      href={s.href}
+                      className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800 transition shadow-sm"
+                    >
+                      {s.cta} <span className="ml-2">›</span>
+                    </Link>
+                  </div>
+
+                 
+                </div>
+              </article>
             ))}
           </div>
 
           {/* Bandeau */}
-          <div className="mt-10 rounded-2xl overflow-hidden shadow-md border border-white/40">
+          <div className="mt-10 rounded-2xl overflow-hidden shadow-md border border-white/40 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div className="bg-linear-to-r from-blue-900 to-blue-700 px-6 py-4 text-white text-lg md:text-xl font-semibold">
               Chaque kWh optimisé devient une marge de manœuvre <span className="italic">pour votre territoire</span>.
             </div>
@@ -189,7 +203,7 @@ export default function Home() {
             {strategy.map((it) => (
               <div
                 key={it.title}
-                className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6"
+                className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
                 <div className="flex justify-center items-center mb-4">
                   <div className="relative h-60 w-60 md:h-60 md:w-60">
@@ -224,7 +238,7 @@ export default function Home() {
                     key={st.n}
                     className={`p-8 text-left ${idx < 2 ? "border-b md:border-b-0 md:border-r border-slate-200" : ""}`}
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
                       <div className="h-9 w-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-semibold">
                         {st.n}
                       </div>
@@ -242,10 +256,10 @@ export default function Home() {
 
             {/* LOGOS (placeholders: mets tes assets si tu en as) */}
             <div className="mt-10 flex flex-wrap items-center justify-center gap-8 opacity-80">
-              <span className="text-slate-500 font-semibold">EDF</span>
-              <span className="text-slate-500 font-semibold">ENEDIS</span>
-              <span className="text-slate-500 font-semibold">GRDF</span>
-              <span className="text-slate-500 font-semibold">Dalkia</span>
+              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">EDF</span>
+              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">ENEDIS</span>
+              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">GRDF</span>
+              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">Dalkia</span>
             </div>
 
             

@@ -16,6 +16,7 @@ const cards = [
       "Plateforme OPERAT (ADEME) : déclarations obligatoires",
     ],
     footer: "Transformez votre conformité en levier pour vos projets.",
+    image: "/images/article-collectivites.png",
   },
   {
     slug: "syndics-coproprietes",
@@ -30,6 +31,7 @@ const cards = [
       "Corrélation DJU (climat)",
     ],
     footer: "Prenez le contrôle et sécurisez vos décisions.",
+    image: "/images/articles-syndics.png",
   },
   {
     slug: "entreprises",
@@ -39,6 +41,7 @@ const cards = [
     icon: "/images/entreprise.png",
     bullets: ["Marge opérationnelle", "Compétitivité", "Image environnementale", "KPI groupe & alertes"],
     footer: "Identifiez rapidement vos économies potentielles.",
+    image: "/images/article-entreprises.png",
   },
 ];
 
@@ -82,6 +85,18 @@ export default function ExpertisePage() {
           />
 
           <div className="relative z-10 flex flex-col h-full p-7">
+            {/* ILLUSTRATION CENTRÉE */}
+            <div className="flex justify-center mb-4">
+              <div className="relative h-28 w-28 md:h-32 md:w-32">
+                <Image
+                  src={c.image}
+                  alt={c.title}
+                  fill
+                  className="object-contain drop-shadow-sm"
+                  priority
+                />
+              </div>
+            </div>
             <h2 className="text-center text-xl font-semibold text-slate-900">
               {c.title}
             </h2>

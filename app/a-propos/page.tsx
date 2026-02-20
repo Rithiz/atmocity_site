@@ -58,7 +58,7 @@ export default function Apropos() {
 
         {/* Petits rectangles */}
         <div className="grid md:grid-cols-2 gap-12 mt-16">
-          <div className="bg-white rounded-2xl border border-slate-300 shadow-md p-10">
+          <div className="bg-white rounded-2xl border border-slate-300 shadow-md p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
               Décarboner
             </h3>
@@ -68,7 +68,7 @@ export default function Apropos() {
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl border border-slate-300 shadow-md p-10">
+          <div className="bg-white rounded-2xl border border-slate-300 shadow-md p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
               Maîtriser son budget
             </h3>
@@ -170,7 +170,7 @@ export default function Apropos() {
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="bg-gray-50 border rounded-3xl p-8 shadow-sm">
+            <div className="bg-gray-50 border rounded-3xl p-8 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <h3 className="text-xl font-semibold mb-3 text-blue-900">
                 Mise en place rapide
               </h3>
@@ -179,7 +179,7 @@ export default function Apropos() {
               </p>
             </div>
 
-            <div className="bg-gray-50 border rounded-3xl p-8 shadow-sm">
+            <div className="bg-gray-50 border rounded-3xl p-8 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <h3 className="text-xl font-semibold mb-3 text-blue-900">
                 Zéro installation
               </h3>
@@ -188,7 +188,7 @@ export default function Apropos() {
               </p>
             </div>
 
-            <div className="bg-gray-50 border rounded-3xl p-8 shadow-sm">
+            <div className="bg-gray-50 border rounded-3xl p-8 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <h3 className="text-xl font-semibold mb-3 text-blue-900">
                 Décision priorisée
               </h3>

@@ -77,18 +77,7 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-6 pt-14 pb-20">
         {/* Header */}
         <div className="text-center">
-          <div className="mx-auto mb-5 flex justify-center">
-            <div className="rounded-2xl bg-white/65 backdrop-blur px-6 py-3 shadow-sm ring-1 ring-white/40">
-              <Image
-                src="/images/logo-atmocity.png"
-                alt="Atmocity"
-                width={220}
-                height={70}
-                className="h-10 w-auto object-contain"
-                priority
-              />
-            </div>
-          </div>
+          
 
           <p className="text-lg md:text-xl text-slate-700">
             Assurez votre conformité et financez d’autres projets
@@ -100,7 +89,7 @@ export default function ContactPage() {
         {/* Cards */}
         <div className="mt-10 grid gap-8 md:grid-cols-2">
           {/* Left: form */}
-          <div className="rounded-3xl bg-white/55 backdrop-blur-xl shadow-xl ring-1 ring-white/50">
+          <div className="rounded-3xl bg-white/55 backdrop-blur-xl shadow-xl ring-1 ring-white/50 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div className="p-7 md:p-9">
               <h2 className="text-2xl font-semibold text-slate-900">
                 Planifiez votre échange en 15 minutes
@@ -164,7 +153,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right: reasons + contact info */}
-          <div className="rounded-3xl bg-white/55 backdrop-blur-xl shadow-xl ring-1 ring-white/50">
+          <div className="rounded-3xl bg-white/55 backdrop-blur-xl shadow-xl ring-1 ring-white/50 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div className="p-7 md:p-9">
               <h2 className="text-2xl font-semibold text-slate-900">
                 Pourquoi nous contacter ?
@@ -183,7 +172,7 @@ export default function ContactPage() {
                   </span>
                   <p className="text-slate-800">
                     <span className="font-semibold">Téléphone :</span>{" "}
-                    <span className="text-slate-600">à renseigner</span>
+                    <span className="text-slate-600">+33 6 66 01 13 98</span>
                   </p>
                 </div>
 
