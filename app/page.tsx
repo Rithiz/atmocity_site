@@ -119,8 +119,7 @@ export default function Home() {
             {segments.map((s) => (
               <article
                 key={s.title}
-                className="relative flex flex-col h-full overflow-hidden rounded-2xl shadow-lg border border-white/40 bg-white/30 backdrop-blur
-             transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                className="relative flex flex-col h-full overflow-hidden rounded-2xl shadow-lg border border-white/40 bg-white/30 backdrop-blur"
               >
                 {/* Image en fond */}
                 <div className="absolute inset-0">
@@ -155,7 +154,7 @@ export default function Home() {
                     {s.desc}
                   </p>
 
-                  <div className="mt-auto pt-6 flex justify-center">
+                  <div className="mt-auto pt-6 flex justify-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
                     <Link
                       href={s.href}
                       className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800 transition shadow-sm"
@@ -171,7 +170,7 @@ export default function Home() {
           </div>
 
           {/* Bandeau */}
-          <div className="mt-10 rounded-2xl overflow-hidden shadow-md border border-white/40 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+          <div className="mt-10 rounded-2xl overflow-hidden shadow-md border border-white/40">
             <div className="bg-linear-to-r from-blue-900 to-blue-700 px-6 py-4 text-white text-lg md:text-xl font-semibold">
               Chaque kWh optimisé devient une marge de manœuvre <span className="italic">pour votre territoire</span>.
             </div>
@@ -203,7 +202,7 @@ export default function Home() {
             {strategy.map((it) => (
               <div
                 key={it.title}
-                className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6"
               >
                 <div className="flex justify-center items-center mb-4">
                   <div className="relative h-60 w-60 md:h-60 md:w-60">
@@ -238,7 +237,7 @@ export default function Home() {
                     key={st.n}
                     className={`p-8 text-left ${idx < 2 ? "border-b md:border-b-0 md:border-r border-slate-200" : ""}`}
                   >
-                    <div className="flex items-center gap-3 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                    <div className="flex items-center gap-3">
                       <div className="h-9 w-9 rounded-full bg-blue-700 text-white flex items-center justify-center font-semibold">
                         {st.n}
                       </div>
@@ -256,10 +255,10 @@ export default function Home() {
 
             {/* LOGOS (placeholders: mets tes assets si tu en as) */}
             <div className="mt-10 flex flex-wrap items-center justify-center gap-8 opacity-80">
-              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">EDF</span>
-              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">ENEDIS</span>
-              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">GRDF</span>
-              <span className="text-slate-500 font-semibold transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">Dalkia</span>
+              <span className="text-slate-500 font-semibold">EDF</span>
+              <span className="text-slate-500 font-semibold">ENEDIS</span>
+              <span className="text-slate-500 font-semibold">GRDF</span>
+              <span className="text-slate-500 font-semibold">Dalkia</span>
             </div>
 
             

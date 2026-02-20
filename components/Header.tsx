@@ -57,7 +57,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={[
-                  "px-5 py-2 rounded-full  font-medium whitespace-nowrap transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl",
+                  "px-5 py-2 rounded-full transition font-medium whitespace-nowrap",
                   isActive
                     ? "bg-blue-700 text-white shadow-sm"
                     : "bg-blue-50 text-blue-900 hover:bg-blue-100",
@@ -71,7 +71,7 @@ export default function Header() {
 
         {/* CTA DESKTOP */}
         <Link href="/contact" className="hidden md:block shrink-0">
-          <button className="bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+          <button className="bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition shadow-sm">
             Demander une démo
           </button>
         </Link>

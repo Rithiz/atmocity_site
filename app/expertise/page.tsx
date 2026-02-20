@@ -147,8 +147,8 @@ export default function ExpertisePage() {
         {/* CHECKLIST CTA */}
         <div className="mt-8 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm p-6 md:p-7 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className="relative h-14 w-14">
-              <Image src="/images/logo_donnees.png" alt="" fill className="object-contain" />
+            <div className="relative h-24 w-24">
+              <Image src="/images/logo_checklists.png" alt="" fill className="object-contain" />
             </div>
             <div>
               <p className="text-lg font-semibold text-slate-900">

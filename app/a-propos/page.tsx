@@ -24,7 +24,6 @@ export default function Apropos() {
       <h1 className="text-4xl md:text-5xl font-semibold text-blue-900">
         Notre vision
       </h1>
-
       <p className="mt-6 text-xl text-slate-800 leading-relaxed">
         Chaque kWh optimisé devient une marge de manœuvre budgétaire et
         environnementale.
@@ -39,10 +38,10 @@ export default function Apropos() {
     {/* MISSION (dans le HERO) */}
     <div className="mt-14">
       <div className="bg-white rounded-[40px] border border-slate-200 shadow-[0_10px_40px_rgba(0,0,0,0.08)] p-10 md:p-16 text-center">
-        <h2 className="text-4xl font-semibold text-slate-900 mb-8">
-          Notre mission
+        <h2 className="text-4xl font-semibold text-slate-900 mb-3">
+          Nos missions
         </h2>
-
+        <div className="mx-auto mt-2 h-[3px] w-20 bg-gradient-to-r from-blue-700 to-blue-400 rounded-full  mb-4" />
         <p className="text-xl text-slate-700 max-w-4xl mx-auto leading-relaxed">
           Atmocity aide les organisations à{" "}
           <span className="font-semibold text-blue-900">
@@ -59,6 +58,19 @@ export default function Apropos() {
         {/* Petits rectangles */}
         <div className="grid md:grid-cols-2 gap-12 mt-16">
           <div className="bg-white rounded-2xl border border-slate-300 shadow-md p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            
+            {/* ILLUSTRATION CENTRÉE */}
+                              <div className="flex justify-center mb-4">
+                                <div className="relative h-28 w-28 md:h-32 md:w-32">
+                                  <Image
+                                    src="/images/logo_CO2.png"
+                                    alt="Décarboner"
+                                    fill
+                                    className="object-contain drop-shadow-sm"
+                                    priority
+                                  />
+                                </div>
+                              </div>
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
               Décarboner
             </h3>
@@ -69,6 +81,18 @@ export default function Apropos() {
           </div>
 
           <div className="bg-white rounded-2xl border border-slate-300 shadow-md p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            {/* ILLUSTRATION CENTRÉE */}
+            <div className="flex justify-center mb-4">
+                                <div className="relative h-28 w-28 md:h-32 md:w-32">
+                                  <Image
+                                    src="/images/logo_porte_feuille.png"
+                                    alt="Budget"
+                                    fill
+                                    className="object-contain drop-shadow-sm"
+                                    priority
+                                  />
+                                </div>
+                              </div>
             <h3 className="text-2xl font-semibold text-blue-900 mb-4">
               Maîtriser son budget
             </h3>
@@ -83,15 +107,21 @@ export default function Apropos() {
   </div>
 </section>
 
-
+{/* SEPARATOR */}
+<div className="max-w-6xl mx-auto px-6">
+  <div className="h-px bg-gradient-to-r from-transparent via-blue-300 to-transparent my-16" />
+</div>
 
       {/* FONDATEUR */}
       <section className="pb-20">
         <div className="max-w-6xl mx-auto px-6">
 
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Le fondateur
-          </h2>
+        <div className="text-center mb-12">
+  <h2 className="text-3xl font-bold text-slate-900">
+    Le fondateur
+  </h2>
+  <div className="mx-auto mt-4 h-[3px] w-20 bg-gradient-to-r from-blue-700 to-blue-400 rounded-full" />
+</div>
 
           <div className="grid md:grid-cols-3 gap-10 items-stretch">
 
@@ -154,15 +184,21 @@ export default function Apropos() {
           </div>
         </div>
       </section>
-
+{/* SEPARATOR */}
+<div className="max-w-6xl mx-auto px-6">
+  <div className="h-px bg-linear-to-r from-transparent via-blue-300 to-transparent my-20" />
+</div>
 
       {/* APPROCHE */}
       <section className="pb-24">
         <div className="max-w-6xl mx-auto px-6 text-center">
 
-          <h2 className="text-3xl font-bold mb-6">
-            Notre approche
-          </h2>
+        <div className="text-center mb-6">
+  <h2 className="text-3xl font-bold text-slate-900">
+    Notre approche
+  </h2>
+  <div className="mx-auto mt-4 h-0.75 w-20 bg-linear-to-r from-blue-700 to-blue-400 rounded-full" />
+</div>
 
           <p className="text-gray-700 mb-12">
             Une solution simple, orientée décision, pensée pour l’impact mesurable.
