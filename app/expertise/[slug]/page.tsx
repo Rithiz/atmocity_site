@@ -10,7 +10,7 @@ const articles = {
     content: (
       <>
       <h2 className="text-2xl font-semibold text-slate-900">
-        🎯 Décret Tertiaire : quels objectifs ?
+        Décret Tertiaire : quels objectifs ?
       </h2>
 
       <p>
@@ -38,13 +38,13 @@ const articles = {
       </p>
 
       <p className="mt-3 font-medium">
-        👉 Chaque collectivité doit choisir la trajectoire la plus adaptée à son patrimoine.
+        Chaque collectivité doit choisir la trajectoire la plus adaptée à son patrimoine.
       </p>
 
       <hr className="my-10" />
 
       <h2 className="text-2xl font-semibold text-slate-900">
-        🏫 Quels bâtiments sont concernés ?
+        Quels bâtiments sont concernés ?
       </h2>
 
       <ul className="list-disc pl-6 mt-4 space-y-2">
@@ -62,7 +62,7 @@ const articles = {
       <hr className="my-10" />
 
       <h2 className="text-2xl font-semibold text-slate-900">
-        🖥 La plateforme OPERAT
+        La plateforme OPERAT
       </h2>
 
       <p>
@@ -166,7 +166,7 @@ const articles = {
 
       <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-5">
         <p className="font-semibold text-blue-900">
-          👉 La transparence énergétique devient un avantage concurrentiel.
+          La transparence énergétique devient un avantage concurrentiel.
         </p>
       </div>
     </>
