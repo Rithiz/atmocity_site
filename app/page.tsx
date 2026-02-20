@@ -205,7 +205,7 @@ export default function Home() {
                 className="rounded-2xl bg-white/65 backdrop-blur border border-slate-200 shadow-sm p-6"
               >
                 <div className="flex justify-center items-center mb-4">
-                  <div className="relative h-60 w-60 md:h-60 md:w-60">
+                  <div className="relative h-80 w-80 md:h-60 md:w-60">
                     <Image
                       src={it.icon}
                       alt={it.title}
