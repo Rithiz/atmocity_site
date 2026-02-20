@@ -62,9 +62,6 @@ export default function ExpertisePage() {
   <div className="relative z-10 mx-auto max-w-6xl px-6 pt-16 text-center">
 
     <div className="mx-auto mt-6 max-w-3xl">
-      <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">
-        Documentation / Expertise
-      </h1>
       <p className="mt-4 text-base md:text-lg text-slate-700">
         Meilleures pratiques, décryptages et conseils concrets pour optimiser
         votre gestion énergétique.

@@ -169,7 +169,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/images/page_1_suite.png"
+            src="/images/page_daccueil.png"
             alt=""
             fill
             className="object-cover"
