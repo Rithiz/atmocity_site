@@ -126,17 +126,15 @@ export default function Apropos() {
           <div className="grid md:grid-cols-3 gap-10 items-stretch">
 
             {/* PHOTO */}
-            <div className="bg-gray-50 border rounded-3xl p-6 flex items-center justify-center">
-              {/* Remplace par ta vraie photo si souhaité */}
-              <div className="text-center">
-                <div className="w-36 h-36 rounded-full bg-blue-100 mx-auto mb-6 flex items-center justify-center text-blue-900 font-bold text-3xl">
-                  RC
-                </div>
-                <p className="text-gray-600">
-                  Rithi CHHIM
-                </p>
-              </div>
-            </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-full">
+  <Image
+    src="/images/founder.jpg"
+    alt="Rithi CHHIM"
+    fill
+    priority
+    className="object-cover object-[center_30%]"
+  />
+</div>
 
 
             {/* BIO */}
