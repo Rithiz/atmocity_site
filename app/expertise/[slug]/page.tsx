@@ -131,7 +131,7 @@ const articles = {
   "syndics-coproprietes": {
     title: "Charges énergétiques : passer de la réaction à l’anticipation",
     subtitle: "La transparence énergétique devient un avantage concurrentiel",
-    image: "/images/article-syndics.png",
+    image: "/images/articles-syndics.png",
     content: (
       <>
       <p>
@@ -237,8 +237,8 @@ export default async function ArticlePage({
   if (!article) return notFound();
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
-      <section className="text-center py-16">
+    <main className="max-w-4xl mx-auto px-6">
+      <section className="text-center">
       <div className="relative mx-auto w-104 h-104">
           <Image
             src={article.image}
