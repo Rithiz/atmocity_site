@@ -76,7 +76,7 @@ export default function ExpertisePage() {
       {cards.map((c) => (
         <article
           key={c.slug}
-          className="relative flex flex-col h-full rounded-3xl overflow-hidden shadow-xl bg-white/80 backdrop-blur border border-white/40 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+          className="relative flex flex-col h-full rounded-3xl overflow-hidden shadow-xl bg-white/80 backdrop-blur transition"
         >
           {/* Image en fond */}
           <div
@@ -125,7 +125,7 @@ export default function ExpertisePage() {
               <div className="mt-5 flex justify-center">
                 <Link
                   href={`/expertise/${c.slug}`}
-                  className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-white font-medium hover:bg-blue-800 transition"
+                  className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-white font-medium hover:bg-blue-800 border border-white/40 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
                 >
                   Lire l&apos;article <span className="ml-2">›</span>
                 </Link>
@@ -162,7 +162,7 @@ export default function ExpertisePage() {
 
           <Link
             href="/expertise/checklist"
-            className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-white font-medium hover:bg-blue-800 transition whitespace-nowrap"
+            className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-6 py-3 text-white font-medium hover:bg-blue-800  whitespace-nowrap border border-white/40 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
           >
             Découvrez nos checklists <span className="ml-2">›</span>
           </Link>
