@@ -10,6 +10,7 @@ const nav = [
   { label: "A propos", href: "/a-propos" },
   { label: "Documentation / Expertise", href: "/expertise" },
   { label: "Contact", href: "/contact" },
+  { label: "Enedis", href: "/enedis-connect" },
 ];
 
 export default function Header() {
