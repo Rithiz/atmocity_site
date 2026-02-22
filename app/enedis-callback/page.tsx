@@ -41,7 +41,7 @@ export default function EnedisCallbackPage({
 
         <div className="mt-8 flex justify-center gap-3">
           <Link
-            href="/enedis-connect-demo"
+            href="/enedis-connect"
             className="rounded-xl bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800 transition"
           >
             Recommencer
